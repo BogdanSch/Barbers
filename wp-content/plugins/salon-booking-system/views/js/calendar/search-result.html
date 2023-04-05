@@ -1,0 +1,62 @@
+	<% if(search_results.length){ %>
+	<ul class="unstyled list-unstyled events-list">
+		<% _.each(search_results, function(result) { %>
+			<li class="search-result">
+				<div class="search-result-content" id="card_prenotazione">
+
+ <div class="prima riga"> 
+  <div class="blocco">
+  <p class="card_value card_customer_name"><%= result.customer %></p>
+  <p class="card_label">customer</p>
+  </div>
+  
+  <div class="blocco">
+  <p class="card_value"><%= result.id %></p>
+  <p class="card_label">ID</p>
+  </div>
+  
+ 
+  <div class="blocco card_data">
+  <p class="card_value"><%= result.time %></p>
+  <p class="card_label">time</p>
+  </div>
+  
+  <div class="blocco">
+  <p class="card_value"><%= result.amount %></p>
+  <p class="card_label">amount</p>
+  </div>
+  
+  <div class="blocco">
+  <p class="card_value"><%= result.status %></p>
+  <p class="card_label">status</p>
+  </div>
+</div>
+
+
+<div class="seconda riga">
+
+<% _.each(result.services, function(service) { %>  
+  <div class="blocco_servizi">
+    <p class="nome_servizio"><%= service.name %></p>
+    <p class="nome_assistente"><% if(service.attendant){ %> <%= service.attendant %> <% } %></p>
+  </div>
+  <% }) %>
+
+</div>
+
+<div class="terza riga">
+  
+<p class="bottone main"><a data-event-id="<%= result.id %>" href="<%= result.edit_url %>" class="event" >DETAILS</a></p>
+<p class="bottone secondary">DUPLICATE</p>
+<p class="bottone secondary">DELETE</p>
+
+</div>
+
+</div>
+
+			</li>
+		<% }) %>
+	</ul>
+	<% }else{ %>
+	 	<p style="text-align:center; font-size:1rem;"><%= holidays_rules_locale.no_results %></p>
+	<% } %>

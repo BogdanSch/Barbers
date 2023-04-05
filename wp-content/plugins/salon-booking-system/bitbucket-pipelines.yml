@@ -1,0 +1,73 @@
+image: php:7.4.1
+pipelines:
+  branches:
+    develop:
+      - parallel:
+          - step:
+              name: Check php code
+              image: composer
+              runs-on:
+                - "self.hosted"
+              script:
+                - composer require overtrue/phplint:^4.0 --dev -vvv
+                - ./vendor/bin/phplint ./ --exclude=vendor --no-cache
+          - step:
+              name: Check javascript code
+              image: node:current-alpine
+              runs-on:
+                - "self.hosted"
+              script:
+                - npm install -g jshint
+                - apk add python3
+#                - npm install
+#                - jshint js/
+      - step:
+          name: Build project
+          image: php:7.4-cli
+          runs-on:
+            - "self.hosted"
+          script:
+            - apt-get update && apt-get install -y rsync zip
+            - export PLUGIN_VERSION=$(egrep -o "Version:\s+(.*)" salon.php | awk '{ print $2 }')
+            - cd build
+            - mkdir "releases"
+            - php ../plugin-build pay $PLUGIN_VERSION
+            - echo 'n' |php ../plugin-build free $PLUGIN_VERSION
+            - php ../plugin-build cc $PLUGIN_VERSION
+          artifacts:
+            - 'build/releases/**'
+      - step:
+          name: Deploy to develop server
+          deployment: Test
+          runs-on:
+            - "self.hosted"
+          script:
+            - ls -li build/releases/
+            - apt update && apt install -y sshpass
+            - sshpass -p $SFTP_PASS scp -o StrictHostKeyChecking=no build/releases/salon-booking-system-*.zip sbit@free-dev.salonbooking.it:/home/sbit/web/free-dev.salonbooking.it/public_html/wp-content/plugins
+            - sshpass -p $SFTP_PASS scp -o StrictHostKeyChecking=no build/releases/salon-booking-plugin-pro-pay-*.zip sbit@pro-dev.salonbooking.it:/home/sbit/web/pro-dev.salonbooking.it/public_html/wp-content/plugins
+            - sshpass -p $SFTP_PASS ssh -o StrictHostKeyChecking=no sbit@free-dev.salonbooking.it 'cd /home/sbit/web/free-dev.salonbooking.it/public_html/wp-content/plugins && rm -rf salon-booking-system && unzip salon-booking-system-*.zip && rm -rf salon-booking-system-*.zip'
+            - sshpass -p $SFTP_PASS ssh -o StrictHostKeyChecking=no sbit@pro-dev.salonbooking.it 'cd /home/sbit/web/pro-dev.salonbooking.it/public_html/wp-content/plugins && rm -rf salon-booking-plugin-pro && unzip salon-booking-plugin-pro-pay-*.zip && rm -rf salon-booking-plugin-pro-pay-*.zip'
+    CI_master:
+      - step:
+          name: Test plugin in browser
+          image: buildkite/puppeteer
+          runs-on:
+            - "self.hosted"
+          script:
+            - /opt/google/chrome/google-chrome --version
+      - parallel:
+          - step:
+              name: Deploy plugin to market
+              trigger: manual
+              runs-on:
+                - "self.hosted"
+              script:
+                - echo deploy to market
+          - step:
+              name: Deploy plugin to market 2
+              trigger: manual
+              runs-on:
+                - "self.hosted"
+              script:
+                - echo deploy to market

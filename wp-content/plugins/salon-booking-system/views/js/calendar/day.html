@@ -1,0 +1,379 @@
+<a
+	class="calbar day-calbar"
+	data-toggle="tooltip"
+	href="#"
+	data-day="<%= start.getFullYear() %>-<%= start.getMonthFormatted() %>-<%= start.getDateFormatted() %>"
+	data-html="true"
+></a>
+<div id="cal-day-box">
+	<% if(all_day.length) {%>
+	<div class="row-fluid clearfix cal-day-hour">
+		<div class="span1 col-xs-1"><b><%= cal.locale.all_day %></b></div>
+		<div class="span11 col-xs-11">
+			<% _.each(all_day, function(event){ %>
+			<div class="day-highlight dh-<%= event.class %>">
+				<a
+					href="<%= event.url ? event.url : 'javascript:void(0)' %>"
+					data-event-id="<%= event.id %>"
+					data-event-class="<%= event['class'] %>"
+					class="event-item day-event-item"
+				>
+					<span class="day-event-item__customer">
+						<%= event.customer %>
+					</span>
+					<span class="day-event-item__from-time hide">
+						<%= event.from_label %> <%= event.from %>
+					</span>
+					<span class="day-event-item__to-time hide">
+						<%= event.to_label %> <%= event.to %>
+					</span>
+					<span class="day-event-item__status-block">
+						<span class="day-event-item__status-block__status"
+							><%= event.status %></span
+						>
+					</span>
+				</a>
+			</div>
+			<% }); %>
+		</div>
+	</div>
+	<% }; %> <% if(before_time.length) {%>
+	<div class="row-fluid clearfix cal-day-hour">
+		<div class="span1 col-xs-3"><b><%= cal.locale.before_time %></b></div>
+		<div class="span5 col-xs-5">
+			<% _.each(before_time, function(event){ %>
+			<div class="day-highlight dh-<%= event.class %>">
+				<a
+					href="<%= event.url ? event.url : 'javascript:void(0)' %>"
+					data-event-id="<%= event.id %>"
+					data-event-class="<%= event['class'] %>"
+					class="event-item day-event-item"
+				>
+					<span class="day-event-item__customer">
+						<%= event.customer %>
+					</span>
+					<span class="day-event-item__from-time hide">
+						<%= event.from_label %> <%= event.from %>
+					</span>
+					<span class="day-event-item__to-time hide">
+						<%= event.to_label %> <%= event.to %>
+					</span>
+					<span class="day-event-item__status-block">
+						<span class="day-event-item__status-block__status"
+							><%= event.status %></span
+						>
+					</span>
+				</a>
+			</div>
+			<% }); %>
+		</div>
+	</div>
+	<% }; %>
+	<div class="cal-day-panel__wrapper clearfix">
+		<div class="row-fluid clearfix cal-row-head">
+		<% if(headers.length) {%>
+			<div class="cal-day-assistants">
+				<% _.each(headers, function(event, pos){ %>
+					<% if(event) { %>
+						<div class="cal-day-assistant"><%= event.name %></div>
+					<% } else { %>
+						<div class="cal-day-assistant"></div>
+					<% } %>
+				<% }); %>
+			</div>
+			<% }; %>
+		</div>
+		<div id="cal-day-panel" class="clearfix">
+			<% if(borders) {%> <% for(var index=0; index < borders + 1;
+			index++){ %>
+			<div
+				class="day-event-panel-border"
+				style="margin-left: <%= 200  * index %>px;"
+			></div>
+			<% }; %> <% }; %> <% _.each(by_hour, function(event){ %>
+			<div
+				class="day-event day-highlight dh-<%= event.class %> <%= event.main ? 'day-event-main-block' : '' %>"
+				style="margin-left: <%= (event.left + 1) * 200 %>px; top: <%= (event.top * 100) %>px; height: <%= (event.lines * 100) %>px !important;<%= event.border_top ? 'border-top: solid 1px #000;' : '' %>"
+				data-toggle="tooltip"
+				data-html="true"
+				title="<%= event.title %>"
+			>
+				<span
+					data-event-id="<%= event.id %>"
+					data-event-class="<%= event['class'] %>"
+					class="event-item day-event-item"
+				>
+					<span class="day-event-item__customer hide">
+						<%= event.customer %>
+					</span>
+					<span class="day-event-item__from-time hide">
+						<%= event.from_label %> <%= event.from %>
+					</span>
+					<span class="day-event-item__to-time hide">
+						<%= event.to_label %> <%= event.to %>
+					</span>
+					<span
+						class="day-event-item__calendar-day <%= !event.is_pro_version ? 'sln-free-version' : '' %>"
+					>
+						<%= event.calendar_day %> <% if(event.main) { %>
+						<i
+							class="fas sln-btn sln-btn--icon sln-icon--plus-circle"
+							style="margin-top: -5px;"
+						></i>
+						<div class="more_details">
+							<ul>
+								<li class="booking_total_amount">
+									<%= cal.locale.total_amount %>
+									<span class="amount_value"
+										><%= event.is_pro_version ? event.amount
+										: '- -' %></span
+									>
+								</li>
+								<li class="booking_discount_amount">
+									<%= cal.locale.discount %>
+									<span class="amount_value"
+										><%= event.is_pro_version ?
+										event.discount : '- -' %></span
+									>
+								</li>
+								<li class="booking_deposit_amount">
+									<%= cal.locale.deposit %>
+									<span class="amount_value"
+										><%= event.is_pro_version ?
+										event.deposit : '- -' %></span
+									>
+								</li>
+								<li class="booking_due_amount">
+									<%= cal.locale.due %>
+									<span class="amount_value"
+										><%= event.is_pro_version ? event.due :
+										'- -' %></span
+									>
+								</li>
+								<% if(!event.is_pro_version) {%>
+								<a
+									href="https://www.salonbookingsystem.com/homepage/plugin-pricing/?utm_source=free%20version&utm_medium=booking%20details&utm_campaign=go_pro"
+									class="booking_tool_item_promolink"
+									target="_blank"
+									>unlock this feature for
+									<strong>79 € / year</strong></a
+								>
+								<% }; %>
+							</ul>
+							<div class="booking_tools">
+								<div class="booking_tool_item">
+									<a href=""
+										><i
+											class="sln-btn--icon sln-icon--pen"
+										></i
+									></a>
+								</div>
+								<div
+									class="booking_tool_item <%= !event.is_pro_version ? 'disabled' : '' %>"
+								>
+									<a href=""
+										><i
+											class="sln-btn--icon sln-icon--trash"
+											style="--font-weight: 800;"
+										></i
+									></a>
+									<% if(!event.is_pro_version) {%>
+									<a
+										href="https://www.salonbookingsystem.com/homepage/plugin-pricing/?utm_source=free%20version&utm_medium=booking%20details&utm_campaign=go_pro"
+										class="booking_tool_item_promolink"
+										target="_blank"
+										>unlock this feature for
+										<strong>79 € / year</strong></a
+									>
+									<% }; %>
+								</div>
+								<div
+									class="booking_tool_item <%= !event.is_pro_version ? 'disabled' : '' %>"
+								>
+									<a class="duplicate_link" href="<%= event.is_pro_version ? event.duplicate_url : '' %>"
+										><i
+											class="sln-btn--icon sln-icon--copy"
+											style="--font-weight: 800;"
+										></i
+									></a>
+									<% if(!event.is_pro_version) {%>
+									<a
+										href="https://www.salonbookingsystem.com/homepage/plugin-pricing/?utm_source=free%20version&utm_medium=booking%20details&utm_campaign=go_pro"
+										class="booking_tool_item_promolink"
+										target="_blank"
+										>unlock this feature for
+										<strong>79 € / year</strong></a
+									>
+									<% }; %>
+								</div>
+								<div
+									class="booking_tool_item <%= !event.is_pro_version ? 'disabled' : '' %>"
+								>
+									<a href=""
+										><i
+											class="sln-btn--icon sln-icon--user-check"
+										></i
+									></a>
+									<% if(!event.is_pro_version) {%>
+									<a
+										href="https://www.salonbookingsystem.com/homepage/plugin-pricing/?utm_source=free%20version&utm_medium=booking%20details&utm_campaign=go_pro"
+										class="booking_tool_item_promolink"
+										target="_blank"
+										>unlock this feature for
+										<strong>79 € / year</strong></a
+									>
+									<% }; %>
+								</div>
+								<% if(!event.is_pro_version) {%>
+								<a
+									href="https://www.salonbookingsystem.com/homepage/plugin-pricing/?utm_source=free%20version&utm_medium=booking%20details_mobile_device&utm_campaign=go_pro"
+									class="more_details_promolink"
+									target="_blank"
+								>
+									<span>unlock these features </span>
+									<strong>buy pro</strong></a
+								>
+								<% }; %>
+							</div>
+							<div
+								class="alert alert-danger alert-dismissible confirm-delete"
+								role="alert"
+							>
+								<strong><%= cal.locale.confirm %></strong>
+								<a
+									class="btn btn-danger btn-ok"
+									href="<%= event.delete_url %>"
+									><%= cal.locale.delete %></a
+								>
+								<button
+									type="button"
+									class="close"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</div>
+						<% }; %>
+					</span>
+				</span>
+			</div>
+			<% }); %>
+			<% _.each(headers, function(att, pos){ %>
+				<% if(att) { %>
+					<% _.each(att.unavailable_times, function(time, index){ %>
+						<div
+						style="margin-left: <%= (pos + 1) * 200 %>px;top:<%= (index * 100) %>px;"
+						class="att-unavailable-highlight"></div>
+					<% }); %>
+				<% } %>
+			<% }); %>
+			<% _.each(headers, function(att, pos){ %>
+				<% if(att) { %>
+					<% for(i = 0; i < lines; i++){ %>
+                                                <div
+						style="margin-left: <%= (pos + 1) * 200 %>px;top:<%= (i * 100) %>px;"
+                                                class="att-time-slot"
+                                                data-index="<%= i %>"
+                                                data-att-id="<%= att.id %>">
+                                                    <button
+                                                            type="button"
+                                                            class="sln-btn sln-btn--cal-day-select sln-btn--icon sln-icon--checkmark"
+                                                    >
+                                                            <%= cal.locale.select %>
+                                                    </button>
+                                                    <div class="att-row-actions">
+                                                        <span
+                                                            class="cal-day-click-tip sln-btn--icon sln-icon--info-circle"
+                                                            ><%= cal.locale.click_row_block %></span
+                                                        >
+                                                        <button
+                                                                type="button"
+                                                                class="sln-btn sln-btn--cal-day sln-btn--cal-day--add sln-btn--icon sln-icon--plus"
+                                                                data-action="add-event-by-date"
+                                                                data-event-date="<%= start.getFullYear() + '-' + start.getMonthFormatted() + '-' + start.getDateFormatted() %>"
+                                                                data-event-time="<%= cal._time(i) %>"
+                                                                data-att-id="<%= att.id %>"
+                                                                data-pos="<%= pos %>"
+                                                        ></button>
+                                                        <button
+                                                                type="button"
+                                                                class="block_date sln-btn sln-btn--cal-day sln-btn--cal-day--lock sln-btn--icon sln-icon--lock"
+                                                                data-att-id="<%= att.id %>"
+                                                        ></button>
+                                                    </div>
+                                                </div>
+					<% }; %>
+				<% } %>
+			<% }); %>
+
+			<div id="cal-day-panel-hour">
+				<% for(i = 0; i < lines; i++){ %>
+				<div class="row-fluid cal-day-hour-part">
+					<div class="span1 col-xs-1"><b><%= cal._time(i) %></b></div>
+					<div
+						class="span1 col-xs-3 cal-day-hour-part-first-column"
+					></div>
+					<div class="span10 col-xs-8"></div>
+					<button
+						type="button"
+						class="sln-btn sln-btn--cal-day-select sln-btn--icon sln-icon--checkmark"
+					>
+						<%= cal.locale.select %>
+					</button>
+					<div class="cal-day-hour-part__rowactions">
+						<span
+							class="cal-day-click-tip sln-btn--icon sln-icon--info-circle"
+							><%= cal.locale.click_row_block %></span
+						>
+						<button
+							type="button"
+							class="sln-btn sln-btn--cal-day sln-btn--cal-day--add sln-btn--icon sln-icon--plus"
+							data-action="add-event-by-date"
+							data-event-date="<%= start.getFullYear() + '-' + start.getMonthFormatted() + '-' + start.getDateFormatted() %>"
+							data-event-time="<%= cal._time(i) %>"
+						></button>
+						<button
+							type="button"
+							class="block_date sln-btn sln-btn--cal-day sln-btn--cal-day--lock sln-btn--icon sln-icon--lock"
+						></button>
+					</div>
+				</div>
+				<% }; %>
+			</div>
+		</div>
+	</div>
+	<% if(after_time.length) {%>
+	<div class="row-fluid clearfix cal-day-hour">
+		<div class="span1 col-xs-3"><b><%= cal.locale.after_time %></b></div>
+		<div class="span11 col-xs-9">
+			<% _.each(after_time, function(event){ %>
+			<div class="day-highlight dh-<%= event.class %>">
+				<span class="cal-hours"><%= event.start_hour %></span>
+				<a
+					href="<%= event.url ? event.url : 'javascript:void(0)' %>"
+					data-event-id="<%= event.id %>"
+					data-event-class="<%= event['class'] %>"
+					class="event-item day-event-item"
+				>
+					<span class="day-event-item__customer">
+						<%= event.customer %>
+					</span>
+					<span class="day-event-item__from-time hide">
+						<%= event.from_label %> <%= event.from %>
+					</span>
+					<span class="day-event-item__to-time hide">
+						<%= event.to_label %> <%= event.to %>
+					</span>
+					<span class="day-event-item__status-block">
+						<span class="day-event-item__status-block__status"
+							><%= event.status %></span
+						>
+					</span>
+				</a>
+			</div>
+			<% }); %>
+		</div>
+	</div>
+	<% }; %>
+</div>

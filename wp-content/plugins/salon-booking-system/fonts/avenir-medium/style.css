@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'avenir-medium';
+  src: url('/path-to/avenir-medium.woff2') format('woff2'),
+       url('/path-to/avenir-medium.woff') format('woff'),
+       url('/path-to/avenir-medium.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'avenir-medium', sans-serif;
+}

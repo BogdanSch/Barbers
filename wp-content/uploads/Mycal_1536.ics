@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Spatie calendar-links
+BEGIN:VEVENT
+UID:b87205a4432af8d5c0380d619526adeb
+SUMMARY:Clipper Avenue - 07 Apr 2023 16:00
+DTSTAMP;TZID=+00:00:20230407T160000
+DTSTART;TZID=+00:00:20230407T160000
+DTEND;TZID=+00:00:20230407T170000
+X-ALT-DESC;FMTTYPE=text/html:Salon name: Clipper Avenue \n\nSalon address: Amsterdam \n\nSalon phone: 0645118716 \n\nSalon email: bogmira777@gmail.com \n\nBooked services:\nBeard Trim: 16:00 ➝ 16:30 - Mario\nHaircut: 16:00 ➝ 16:30\nShampoo: 17:00 ➝ 17:00 - Mario\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Amsterdam
+END:VEVENT
+END:VCALENDAR

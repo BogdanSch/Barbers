@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'geometricslab703bt-xtrabold-opentype_bigfontsite.com';
+  src: url('/path-to/geometricslab703bt-xtrabold-opentype_bigfontsite.com.woff2') format('woff2'),
+       url('/path-to/geometricslab703bt-xtrabold-opentype_bigfontsite.com.woff') format('woff'),
+       url('/path-to/geometricslab703bt-xtrabold-opentype_bigfontsite.com.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'geometricslab703bt-xtrabold-opentype_bigfontsite.com', sans-serif;
+}

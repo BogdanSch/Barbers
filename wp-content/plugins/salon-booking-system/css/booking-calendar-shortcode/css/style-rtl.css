@@ -1,0 +1,1169 @@
+/*====================================== reset.css is here ========================================*/
+#sln-salon-booking-calendar-shortcode * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#sln-salon-booking-calendar-shortcode table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#sln-salon-booking-calendar-shortcode fieldset,
+#sln-salon-booking-calendar-shortcode img {
+  border: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#sln-salon-booking-calendar-shortcode address,
+#sln-salon-booking-calendar-shortcode caption,
+#sln-salon-booking-calendar-shortcode cite,
+#sln-salon-booking-calendar-shortcode code,
+#sln-salon-booking-calendar-shortcode dfn,
+#sln-salon-booking-calendar-shortcode em,
+#sln-salon-booking-calendar-shortcode strong,
+#sln-salon-booking-calendar-shortcode th,
+#sln-salon-booking-calendar-shortcode var {
+  font-style: normal;
+  font-weight: normal;
+}
+#sln-salon-booking-calendar-shortcodeol,
+#sln-salon-booking-calendar-shortcode ul {
+  list-style: none;
+}
+#sln-salon-booking-calendar-shortcode caption,
+#sln-salon-booking-calendar-shortcode th {
+  text-align: right;
+}
+#sln-salon-booking-calendar-shortcode h1,
+#sln-salon-booking-calendar-shortcode h2,
+#sln-salon-booking-calendar-shortcode h3,
+#sln-salon-booking-calendar-shortcode h4,
+#sln-salon-booking-calendar-shortcode h5,
+#sln-salon-booking-calendar-shortcode h6 {
+  font-size: 100%;
+  font-weight: bold;
+}
+#sln-salon-booking-calendar-shortcode q:before,
+#sln-salon-booking-calendar-shortcode q:after {
+  content: "";
+}
+#sln-salon-booking-calendar-shortcode abbr,
+#sln-salon-booking-calendar-shortcode acronym {
+  border: 0;
+}
+#sln-salon-booking-calendar-shortcode .clear {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  display: block;
+  height: 0;
+}
+#sln-salon-booking-calendar-shortcode .clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#sln-salon-booking-calendar-shortcode .last {
+  margin: 0 !important;
+}
+#sln-salon-booking-calendar-shortcode .pad_last {
+  padding: 0 !important;
+}
+#sln-salon-booking-calendar-shortcode .no_bg {
+  background: none !important;
+}
+#sln-salon-booking-calendar-shortcode .no_bor {
+  border: 0 none !important;
+}
+#sln-salon-booking-calendar-shortcode header,
+#sln-salon-booking-calendar-shortcode nav,
+#sln-salon-booking-calendar-shortcode section,
+#sln-salon-booking-calendar-shortcode article,
+#sln-salon-booking-calendar-shortcode aside,
+#sln-salon-booking-calendar-shortcode footer,
+#sln-salon-booking-calendar-shortcode hgroup,
+#sln-salon-booking-calendar-shortcode figure {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+#sln-salon-booking-calendar-shortcode p {
+  font-size: 20px;
+  line-height: 22px;
+}
+/**************************************************************************************/
+#sln-salon-booking-calendar-shortcode a {
+  color: #000;
+  text-decoration: none;
+  outline: 0 none !important;
+}
+#sln-salon-booking-calendar-shortcode a:hover,
+#sln-salon-booking-calendar-shortcode a:focus {
+  text-decoration: none;
+  outline: 0 none !important;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -web-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  color: inherit;
+}
+#sln-salon-booking-calendar-shortcode h1 {
+  font-size: 48px;
+  line-height: 50px;
+}
+#sln-salon-booking-calendar-shortcode h2 {
+  font-size: 45px;
+  line-height: 65px;
+}
+#sln-salon-booking-calendar-shortcode h3 {
+  font-size: 42px;
+  line-height: 50px;
+}
+#sln-salon-booking-calendar-shortcode h4 {
+  font-size: 38px;
+  line-height: 60px;
+}
+
+#sln-salon-booking-calendar-shortcode h5 {
+  font-size: 19px;
+  line-height: 22px;
+  color: #6b6b6b;
+  font-family: "AvenirLT-Roman", Verdana;
+  font-weight: 400;
+}
+#sln-salon-booking-calendar-shortcode h6 {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444;
+  font-family: "Avenir-Black", Verdana;
+  font-style: normal;
+}
+/*---------------------------------------------------*/
+
+/* html{height:100%;}
+.flt_lt {float:left; display:inline;}
+.flt_rt {float:right; display:inline;}
+.btn{background:#fff;width: 349px;height: 46px;margin:0 auto;display: block;border-radius: 40px;text-align: center;}
+*/
+
+/*--fonts here--*/
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url("../fonts/Avenir-Black/Avenir-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Avenir-Black/Avenir-Black.woff") format("woff"),
+    url("../fonts/Avenir-Black/Avenir-Black.ttf") format("truetype"),
+    url("../fonts/Avenir-Black/Avenir-Black.svg#Avenir-Black") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirLT-Medium";
+  src: url("../fonts/AvenirLT-Medium/AvenirLT-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/AvenirLT-Medium/AvenirLT-Medium.woff") format("woff"),
+    url("../fonts/AvenirLT-Medium/AvenirLT-Medium.ttf") format("truetype"),
+    url("../fonts/AvenirLT-Medium/AvenirLT-Medium.svg#AvenirLT-Medium")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirLT-Roman";
+  src: url("../fonts/AvenirLT-Roman/AvenirLT-Roman.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/AvenirLT-Roman/AvenirLT-Roman.woff") format("woff"),
+    url("../fonts/AvenirLT-Roman/AvenirLT-Roman.ttf") format("truetype"),
+    url("../fonts/AvenirLT-Roman/AvenirLT-Roman.svg#AvenirLT-Roman")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-----------LayOut Start here-----------------------*/
+#sln-salon-booking-calendar-shortcode .wrapper {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out; /* max-width:1203px; */
+}
+/*.container{width:100%;margin:0 auto;padding: 0;}*/
+
+/*-----------------home page start---------------------*/
+/*--booking-main start--*/
+/*.booking-main{padding:54px 25px 0;}*/
+.booking-in {
+}
+#sln-salon-booking-calendar-shortcode .booking-calender {
+  background: #f7f7f7;
+  padding: 10px 18px 40px 15px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+.booking-calendermain {
+}
+#sln-salon-booking-calendar-shortcode .calender-head {
+  padding: 0;
+}
+.calender-head-in {
+}
+#sln-salon-booking-calendar-shortcode .calender-head-in > ul {
+  display: flex;
+  width: 100%;
+}
+#sln-salon-booking-calendar-shortcode .calender-head-in > ul > li {
+  /*
+  width: 16.7%;
+  display: table-cell;
+  vertical-align: middle;
+  */
+  width: unset;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+#sln-salon-booking-calendar-shortcode .calender-head-in > ul > li.first-column {
+  min-width: 18%;
+}
+#sln-salon-booking-calendar-shortcode .katrine {
+  padding: 15px 20px 12px 20px;
+}
+.katrine figure {
+}
+#sln-salon-booking-calendar-shortcode .katrine figure img {
+  margin: 0 auto 10px;
+  border-radius: 100%;
+}
+.katrine figure img.img1 {
+  border: 2px solid #88cb9c;
+}
+.katrine figure img.img2 {
+  border: 2px solid #ef971d;
+}
+.katrine figure img.img3 {
+  border: 2px solid #5689cb;
+}
+.katrine figure img.img4 {
+  border: 2px solid #8f1b90;
+}
+.katrine figure img.img5 {
+  border: 2px solid #9d6309;
+}
+#sln-salon-booking-calendar-shortcode .katrine h5 {
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.calender-content {
+}
+.calender-head-in-content {
+}
+#sln-salon-booking-calendar-shortcode .calender-head-in-content > ul {
+  display: block;
+  width: 100%;
+}
+#sln-salon-booking-calendar-shortcode .calender-head-in-content > ul > li {
+  width: 16.7%;
+  position: relative; /*border-bottom: 1px dashed #fff;*/
+}
+@media only screen and (min-width: 1024px) {
+  #sln-salon-booking-calendar-shortcode .calender-head-in-content > ul {
+    display: flex;
+  }
+  #sln-salon-booking-calendar-shortcode .calender-head-in-content > ul > li {
+    width: unset;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 12px 0;
+    border-left: 2px solid #fff;
+  }
+  #sln-salon-booking-calendar-shortcode .calender-head-in-content > ul > li,
+  #sln-salon-booking-calendar-shortcode .calender-head-in > ul > li {
+    max-width: 15em;
+  }
+}
+#sln-salon-booking-calendar-shortcode
+  .calender-head-in-content
+  > ul
+  > li.first-column {
+  min-width: 18%;
+  padding: 18px 0;
+}
+#sln-salon-booking-calendar-shortcode
+  .calender-head-in-content
+  > ul
+  > li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 290px;
+  height: 1px;
+  border-bottom: 1px dashed #fff;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0.75;
+}
+#sln-salon-booking-calendar-shortcode
+  .calender-head-in-content
+  > ul
+  > li.no-border:after {
+  display: none;
+}
+#sln-salon-booking-calendar-shortcode
+  .calender-head-in-content
+  > ul
+  > li.black-line:after {
+  border-bottom: 1px dashed #ccc;
+}
+#sln-salon-booking-calendar-shortcode
+  .calender-head-in-content
+  > ul
+  > li.black-line.no-border:after {
+  display: none;
+}
+
+/*.calender-head-in-content > ul > li.black-line{border-bottom:1px dashed #8E8E8E;}*/
+#sln-salon-booking-calendar-shortcode .katrine1 {
+  align-items: center;
+  padding: 10px 10px 0px 10px;
+}
+
+#sln-salon-booking-calendar-shortcode .katrine-desktop {
+  padding: 0 7% 0 0;
+}
+#sln-salon-booking-calendar-shortcode .katrine-desktop1 {
+  padding: 0 20px 0 0;
+}
+.katrine-desktop h6 {
+  letter-spacing: 0.2px;
+}
+#sln-salon-booking-calendar-shortcode .katrine-desktop em {
+  display: block;
+  color: #6b6b6b;
+  font-size: 15px;
+  line-height: 17px;
+  font-family: "AvenirLT-Medium", Verdana;
+  letter-spacing: 0.2px;
+}
+
+#sln-salon-booking-calendar-shortcode .katrine-mobile h6 {
+  letter-spacing: 0.2px;
+}
+#sln-salon-booking-calendar-shortcode .katrine-mobile em {
+  display: block;
+  color: #6b6b6b;
+  font-size: 15px;
+  line-height: 17px;
+  font-family: "AvenirLT-Medium", Verdana;
+  letter-spacing: 0.2px;
+}
+.katrine-mobile1 {
+}
+.katrine1 > ul {
+}
+#sln-salon-booking-calendar-shortcode .katrine1 > ul > li {
+  display: block;
+  padding: 0 0 8px 0;
+}
+@media only screen and (min-width: 1024px) {
+}
+#sln-salon-booking-calendar-shortcode .katrine1 > ul > li {
+  display: block;
+  padding: 3px 10px 7px;
+}
+@media (hover: hover), (-ms-high-contrast: none) {
+}
+#sln-salon-booking-calendar-shortcode .katrine1 > ul > li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.katrine1 > ul > li p {
+}
+#sln-salon-booking-calendar-shortcode .katrine1 > ul > li p small {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--palette_cl_text);
+  font-family: "AvenirLT-Medium", Verdana;
+}
+#sln-salon-booking-calendar-shortcode .katrine1 > ul > li p em {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--palette_cl_text);
+  font-family: "AvenirLT-Medium", Verdana;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+.bg-color1 {
+  background: #88cb9c;
+}
+.bg-color2 {
+  background: #ef971d;
+}
+.bg-color3 {
+  background: #5689cb;
+}
+.bg-color4 {
+  background: #8f1b90;
+}
+.bg-color5 {
+  background: #9d6309;
+}
+#sln-salon-booking-calendar-shortcode .katrine2 > ul > li {
+  position: relative;
+}
+#sln-salon-booking-calendar-shortcode .katrine2 > ul > li:hover .tool-tip {
+  display: block;
+}
+#sln-salon-booking-calendar-shortcode .tool-tip {
+  position: absolute;
+  top: 50%;
+  right: calc(100% - 2px);
+  width: 206px;
+  background-color: #fff;
+  border-right: 4px solid #fff;
+  border-radius: 0 2px 2px 0;
+  padding: 6px 12px;
+  display: none;
+  z-index: 99;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+#sln-salon-booking-calendar-shortcode .tool-tip::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.5;
+}
+.tool-tip5 {
+  left: 0;
+  right: inherit;
+}
+.tooltip-in {
+}
+#sln-salon-booking-calendar-shortcode .tooltip-in p {
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "AvenirLT-Roman", Verdana;
+  font-weight: 600;
+  padding: 10px 0 0 0;
+  letter-spacing: 0.1px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 4px;
+}
+#sln-salon-booking-calendar-shortcode .tooltip-in a {
+  display: inline-block;
+  color: var(--palette_cl_text);
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "AvenirLT-Roman", Verdana;
+}
+#sln-salon-booking-calendar-shortcode .tool-tip-arrow {
+  position: relative;
+  z-index: 2;
+}
+
+#sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow {
+  position: absolute;
+  top: 30%;
+  right: -27px;
+}
+
+#sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow .outer {
+  width: 0;
+  height: 0;
+  border-left: 20px solid #bdbdbd;
+  border-top: 12px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow .inner {
+  width: 0;
+  height: 0;
+  border-left: 12px solid #ffffff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+
+#sln-salon-booking-calendar-shortcode .tool-tip-arrow .message-body {
+  float: right;
+  width: 300px;
+  height: auto;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 1px solid #bdbdbd;
+  padding: 6px 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#sln-salon-booking-calendar-shortcode .katrine.active .tool-tip {
+  display: block !important;
+}
+
+/*--for padding purpose--*/
+#sln-salon-booking-calendar-shortcode .katrine3 {
+  padding: 12px 10px 19px 3px;
+}
+#sln-salon-booking-calendar-shortcode .katrine4 {
+  padding: 5px 10px 5px 3px;
+}
+#sln-salon-booking-calendar-shortcode .katrine5 {
+  padding: 10px 10px 9px 3px;
+}
+#sln-salon-booking-calendar-shortcode .katrine6 {
+  padding: 6px 10px 3px 3px;
+}
+@media only screen and (min-width: 1024px) {
+}
+#sln-salon-booking-calendar-shortcode .katrine6 {
+  padding: 0;
+}
+/*--for padding purpose end--*/
+
+/*---new changes start---*/
+#sln-salon-booking-calendar-shortcode .calender-head-in li.desktop-none {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*----11-11-2019 changes----*/
+#sln-salon-booking-calendar-shortcode .booking-calendermain-mobile {
+  display: none;
+}
+#sln-salon-booking-calendar-shortcode .katrine-mobile {
+  display: none;
+}
+#sln-salon-booking-calendar-shortcode .figure-left {
+  display: none;
+  width: 50%;
+}
+
+/*----11-11-2019 changes----*/
+
+/* inputs feilds */
+#sln-salon-booking-calendar-shortcode input,
+#sln-salon-booking-calendar-shortcode textarea,
+#sln-salon-booking-calendar-shortcode button,
+#sln-salon-booking-calendar-shortcode select {
+  -webkit-appearance: none; /*Safari/Chrome*/
+  -moz-appearance: none; /*Firefox*/
+  -ms-appearance: none; /*IE*/
+  -o-appearance: none; /*Opera*/
+  appearance: none;
+  -webkit-border-radius: 0;
+}
+
+#sln-salon-booking-calendar-shortcode .img {
+  border: solid 2px transparent;
+}
+@media only screen and (max-width: 1700px) {
+  /*---index page start---*/
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content
+    > ul
+    > li:after {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+}
+@media only screen and (max-width: 1300px) {
+  /*---index page start---*/
+  #sln-salon-booking-calendar-shortcode .katrine1 > ul > li p em {
+    font-size: 14px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine1 > ul > li p small {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /*---index page start---*/
+  #sln-salon-booking-calendar-shortcode .katrine-desktop {
+    padding: 0;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine1 > ul > li p em {
+    font-size: 14px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine1 > ul > li p small {
+    font-size: 12px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine h5 {
+    font-size: 15px;
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip {
+    width: 173px;
+  }
+  #sln-salon-booking-calendar-shortcode .tooltip-in p {
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow {
+    top: 30%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /*---index page start---*/
+  #sln-salon-booking-calendar-shortcode .katrine h5 {
+    font-size: 14px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-desktop h6 {
+    font-size: 14px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-desktop em {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /*---index page start---*/
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content
+    > ul
+    > li.black-line {
+    display: none;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-mobile {
+    display: block;
+    background: #f7f7f7;
+    padding: 10px 25px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine1 > ul {
+    width: 60%;
+    float: right;
+    padding: 10px 25px;
+  }
+  #sln-salon-booking-calendar-shortcode .calender-head-in-content > ul > li {
+    width: 100%;
+    display: block;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content
+    > ul
+    > li:after {
+    width: 64%;
+    left: 0;
+    right: auto;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content
+    > ul
+    > li.no-border:after {
+    width: 50%;
+    display: block;
+  }
+
+  #sln-salon-booking-calendar-shortcode .katrine1 {
+    padding: 0;
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip {
+    /*
+    left: inherit;
+    right: 0;
+    top: 100%;
+    transform: translateY(0);
+    */
+    width: 100%;
+    right: 50%;
+    left: 0;
+    top: 100%;
+    transform: translateY(0) translateX(50%);
+    padding: 10px;
+    border-top: 4px solid #fff;
+    border-radius: 0;
+    border-right: none;
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow {
+    top: -20px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow .inner {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-top: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 8px solid #fff;
+  }
+  #sln-salon-booking-calendar-shortcode .calender-head {
+    display: none;
+  }
+  #sln-salon-booking-calendar-shortcode .booking-calender {
+    padding: 40px 15px 0px 15px;
+  }
+  #sln-salon-booking-calendar-shortcode .booking-main {
+    padding: 40px 25px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine {
+    display: flex;
+    display: -webkit-flex;
+  }
+
+  /*--new mobile view start--*/
+  #sln-salon-booking-calendar-shortcode .mobile-hide {
+    display: none !important;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine {
+    display: table;
+    width: 100%;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-mobile {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine1 > ul {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+  }
+  #sln-salon-booking-calendar-shortcode .calender-head-in-content {
+    background: #f7f7f7;
+  }
+  #sln-salon-booking-calendar-shortcode .booking-main {
+    display: none;
+  }
+  #sln-salon-booking-calendar-shortcode .booking-calendermain {
+    padding: 40px 25px;
+  }
+  #sln-salon-booking-calendar-shortcode .calender-head-in-content {
+    margin: 0 0 40px 0;
+  }
+  #sln-salon-booking-calendar-shortcode .figure-left {
+    width: 36%;
+    display: table-cell;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine figure {
+    width: 64%;
+    margin: 0 auto;
+  }
+  #sln-salon-booking-calendar-shortcode .booking-calendermain-mobile {
+    display: block;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content
+    > ul
+    > li:nth-child(1):after {
+    display: none;
+  }
+  /*--new mobile view end--*/
+
+  /*--new---*/
+  #sln-salon-booking-calendar-shortcode .calender-head-in li.desktop-none {
+    display: block;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine.katrine-mobile {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine1 {
+    align-items: inherit;
+  }
+  /*    .katrine-mobile{position: relative;display: flex;display: -webkit-flex;align-items: center;-webkit-align-items: center;-o-align-items: center;-moz-align-items: center;-ms-align-items: center;}*/
+  .katrine-mobile-cnt {
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-mobile:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 36%;
+    border-bottom: 1px dashed #8e8e8e;
+    right: 0;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-mobile.katrine-mobile1:after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /*---index page start---*/
+}
+@media only screen and (max-width: 576px) {
+  /*---index page start---*/
+  #sln-salon-booking-calendar-shortcode .katrine-mobile h6 {
+    font-size: 14px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-mobile em {
+    font-size: 14px;
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip {
+    width: 100%;
+  }
+  #sln-salon-booking-calendar-shortcode .tooltip-in p {
+    /*
+    font-family: Verdana;
+    padding: 0 0 10px 0;
+    */
+  }
+}
+@media only screen and (max-width: 479px) {
+  /*---index page start---*/
+  #sln-salon-booking-calendar-shortcode .booking-main {
+    padding: 25px 8px 0;
+  }
+  #sln-salon-booking-calendar-shortcode .booking-calender {
+    padding: 10px 15px 40px 15px;
+  }
+
+  #sln-salon-booking-calendar-shortcode .tool-tip {
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow {
+    bottom: -12px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: auto;
+    position: absolute;
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow .outer {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-right: 10px solid transparent;
+    border-bottom: none;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #bdbdbd;
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip-arrow .arrow .inner {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-right: 10px solid transparent;
+    border-bottom: none;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #bdbdbd;
+  }
+  /*    .katrine1 > ul{width:60%;}*/
+  #sln-salon-booking-calendar-shortcode .katrine-mobile {
+    width: 40%;
+    padding: 10px 10px;
+  }
+  #sln-salon-booking-calendar-shortcode .tool-tip-mobile {
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-mobile h6 {
+    font-size: 13px;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .tool-tip-mobile
+    .tool-tip-arrow
+    .arrow {
+    top: -20px;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .tool-tip-mobile
+    .tool-tip-arrow
+    .arrow
+    .outer {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-top: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 8px solid #fff;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .tool-tip-mobile
+    .tool-tip-arrow
+    .arrow
+    .inner {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-top: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 8px solid #fff;
+  }
+  #sln-salon-booking-calendar-shortcode .booking-calendermain {
+    padding: 20px 15px;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-mobile:after {
+    width: 36%;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content
+    > ul
+    > li:after {
+    width: 64%;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content
+    > ul
+    > li.no-border:after {
+    width: 64%;
+    display: block;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine1 > ul {
+    padding: 10px 15px;
+  }
+}
+
+:root {
+  --palette_cl_1: #fdb4b5ff;
+  --palette_cl_2: #fac6aaff;
+  --palette_cl_3: #fcd5a6ff;
+  --palette_cl_4: #fce8b8ff;
+  --palette_cl_5: #d3e5c5ff;
+  --palette_cl_6: #b0e0d1ff;
+  --palette_cl_7: #b9c8d5ff;
+  --palette_cl_8: #89aad8ff;
+  --palette_cl_text: #222222;
+}
+@media only screen and (min-width: 1024px) {
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:not(.header-column):nth-child(8n),
+  #sln-salon-booking-calendar-shortcode li[class^="column-"]:nth-child(8n) img,
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n)
+    .tool-tip {
+    background-color: var(--palette_cl_7);
+  }
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:not(.header-column):nth-child(8n + 1),
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 1)
+    img,
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 1)
+    .tool-tip {
+    background-color: var(--palette_cl_8);
+  }
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:not(.header-column):nth-child(8n + 2),
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 2)
+    img,
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 2)
+    .tool-tip {
+    background-color: var(--palette_cl_1);
+  }
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:not(.header-column):nth-child(8n + 3),
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 3)
+    img,
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 3)
+    .tool-tip {
+    background-color: var(--palette_cl_2);
+  }
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:not(.header-column):nth-child(8n + 4),
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 4)
+    img,
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 4)
+    .tool-tip {
+    background-color: var(--palette_cl_3);
+  }
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:not(.header-column):nth-child(8n + 5),
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 5)
+    img,
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 5)
+    .tool-tip {
+    background-color: var(--palette_cl_4);
+  }
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:not(.header-column):nth-child(8n + 6),
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 6)
+    img,
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 6)
+    .tool-tip {
+    background-color: var(--palette_cl_5);
+  }
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:not(.header-column):nth-child(8n + 7),
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 7)
+    img,
+  #sln-salon-booking-calendar-shortcode
+    li[class^="column-"]:nth-child(8n + 7)
+    .tool-tip {
+    background-color: var(--palette_cl_6);
+  }
+}
+@media only screen and (max-width: 1023px) {
+  #sln-salon-booking-calendar-shortcode .katrine1 {
+    display: flex;
+  }
+  #sln-salon-booking-calendar-shortcode .katrine-mobile {
+    width: 36%;
+    padding: 15px 0 15px 10px;
+    min-width: 36%;
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul,
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul
+    .tool-tip {
+    background-color: var(--palette_cl_7);
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 1)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul,
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 1)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul
+    .tool-tip {
+    background-color: var(--palette_cl_8);
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 2)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul,
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 2)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul
+    .tool-tip {
+    background-color: var(--palette_cl_1);
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 3)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul,
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 3)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul
+    .tool-tip {
+    background-color: var(--palette_cl_2);
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 4)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul,
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 4)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul
+    .tool-tip {
+    background-color: var(--palette_cl_3);
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 5)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul,
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 5)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul
+    .tool-tip {
+    background-color: var(--palette_cl_4);
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 6)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul,
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 6)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul
+    .tool-tip {
+    background-color: var(--palette_cl_5);
+  }
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 7)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul,
+  #sln-salon-booking-calendar-shortcode
+    .calender-head-in-content:nth-child(8n + 7)
+    > .mobile-page2
+    > li:not(:first-child)
+    .katrine
+    ul
+    .tool-tip {
+    background-color: var(--palette_cl_6);
+  }
+}
+.date--long {
+  display: none;
+}
+.date--short {
+  display: inline;
+}
+@media only screen and (min-width: 768px) {
+  .date--long {
+    display: inline;
+  }
+  .date--short {
+    display: none;
+  }
+}
